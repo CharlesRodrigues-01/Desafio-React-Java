@@ -201,7 +201,7 @@ class Busca extends React.Component{
 
   //função para buscar a lista de reservas no back-end 
     getLists() {
-        this.setState({ loading: true }, () => {fetch("http://localhost:8080/Reservas-backend/reservas")
+        this.setState({ loading: true }, () => {fetch("https://desafio-java.herokuapp.com/reservas")
         .then(res => res.json())
         .then(result => this.setState({loading: false, alldata: result})
         )
@@ -212,7 +212,7 @@ class Busca extends React.Component{
     //função para cadastrar os dados no banco de dados
     createList() {
         if ( this.handleValidation() ) {
-        fetch("http://localhost:8080/Reservas-backend/reservas", {
+            fetch("https://desafio-java.herokuapp.com/reservas", {
             method: "POST", 
             headers: {
             "Content-Type": "application/json"
@@ -258,7 +258,7 @@ class Busca extends React.Component{
             reqEsp: "Carregando...",
             situacao: "Carregando..."
         }
-        }, () => {fetch("http://localhost:8080/Reservas-backend/reservas/" + id)
+        }, () => {fetch("https://desafio-java.herokuapp.com/reservas/" + id)
     .then(res => res.json()).then(result => {
         this.setState({
         singledata: {
@@ -300,7 +300,7 @@ class Busca extends React.Component{
             reqEsp: "Carregando...",
             situacao: "Carregando..."
         }
-        }, () => {fetch("http://localhost:3001/reservas/" + nome)
+        }, () => {fetch("https://desafio-java.herokuapp.com/reservas/" + nome)
     .then(res => res.json()).then(result => {
         this.setState({
         singledata: {
@@ -327,7 +327,7 @@ class Busca extends React.Component{
     //função para atualizar o reserva com consulta através do id fornecido pela requisição
     updateList(e, id) {
         if ( this.handleValidation() ) {
-        fetch("http://localhost:8080/Reservas-backend/reservas/" + id, {
+            fetch("https://desafio-java.herokuapp.com/reservas/" + id, {
             method: "PUT",
             headers: {
             "Content-Type": "application/json" },
@@ -358,7 +358,7 @@ class Busca extends React.Component{
 
      //função para deletar cadastro através de id 
     deleteList(e, id) {
-        fetch("http://localhost:8080/Reservas-backend/reservas/" + id, {
+        fetch("https://desafio-java.herokuapp.com/reservas/" + id, {
         method: "DELETE"
     })
     .then(res => res.json())
