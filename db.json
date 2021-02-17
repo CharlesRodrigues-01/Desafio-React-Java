@@ -1,0 +1,35 @@
+{
+  "reservas": [
+    {
+      "nome": "Charles",
+      "sobrenome": "Rodrigues",
+      "email": "email@email.com",
+      "quarto": "Tipo 2 (Suite Luxo)",
+      "numPessoas": "4",
+      "dataChegada": "2021-02-04",
+      "dataPartida": "2021-02-25",
+      "horaChegada": "15:48",
+      "horaPartida": "15:47",
+      "translado": "sim",
+      "reqEsp": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "situacao": "Aberto",
+      "id": 1
+    },
+    {
+      "nome": "Charles",
+      "sobrenome": "Rodrigues",
+      "email": "email@email.com",
+      "quarto": "Tipo padrão (1 a 2 pessoas)",
+      "numPessoas": "1",
+      "codVoo": "ssssssssssssssssssss",
+      "dataChegada": "2021-02-04",
+      "dataPartida": "2021-02-25",
+      "horaChegada": "10:24",
+      "horaPartida": "10:26",
+      "translado": "não",
+      "reqEsp": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "situacao": "Fechado",
+      "id": 2
+    }
+  ]
+}

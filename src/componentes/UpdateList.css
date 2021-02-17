@@ -1,0 +1,17 @@
+input[type=number] {
+
+    text-align: right;
+    
+  }
+
+span[class=formField_error] {
+
+color: red;
+
+}
+
+span[class=required] {
+
+  color: red;
+  
+  }
