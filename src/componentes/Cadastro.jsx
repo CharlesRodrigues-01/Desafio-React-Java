@@ -6,6 +6,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import TextField from '@material-ui/core/TextField';
 
 
 function Cadastro(props) {
@@ -134,7 +135,7 @@ function Cadastro(props) {
 
                         <div className="form-group col-sm-3">
 
-                          <input type="time" className="form-control" id="horaChegada" 
+                          <TextField type="time" className="form-control" id="horaChegada" 
                           name="horaChegada" value={props.singledata.horaChegada} onChange={props.handleChange} onBlur={props.handleBlur}/>
                           <span className="formField_error">{props.errors.horaChegada}</span>
 
@@ -161,7 +162,7 @@ function Cadastro(props) {
 
                         <div className="form-group col-sm-3">
 
-                          <input type="time" className="form-control" id="horaPartida" 
+                          <TextField type="time" className="form-control" id="horaPartida" 
                           name="horaPartida" value={props.singledata.horaPartida} onChange={props.handleChange} onBlur={props.handleBlur}/>
                           <span className="formField_error">{props.errors.horaPartida}</span>
 
